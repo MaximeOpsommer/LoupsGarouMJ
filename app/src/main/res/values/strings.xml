@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoupsGarouMJ</string>
+    <string name="mainTitle">Loups Garous</string>
+    <string name="main.playButton">JOUER</string>
+    <string name="main.rulesButton">REGLES</string>
+    <string name="newPlayer.name.placeholder">Nom du nouveau joueur</string>
+    <string name="newPlayer.button">AJOUTER</string>
+</resources>
