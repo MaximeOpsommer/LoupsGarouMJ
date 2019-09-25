@@ -54,6 +54,8 @@
             android:layout_marginHorizontal="10dp"
             android:orientation="vertical"
             android:background="@drawable/custom_border"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10sp"
             tools:targetApi="o">
         </ListView>
 

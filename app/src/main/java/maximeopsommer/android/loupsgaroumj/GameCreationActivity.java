@@ -29,10 +29,14 @@ public class GameCreationActivity extends AppCompatActivity {
         addPlayerButton = findViewById(R.id.addPlayerButton);
         addPlayerButton.setOnClickListener(e -> checkPlayerName());
         playersList = findViewById(R.id.playersList);
+
+        // custom adapter
+        PlayerListAdapter playerListAdapter = new PlayerListAdapter(playersName, this);
+
         final ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, playersName);
         cancelButton = findViewById(R.id.cancelButton);
-        playersList.setAdapter(adapter);
+        playersList.setAdapter(playerListAdapter);
         cancelButton.setOnClickListener(e -> switchToMainView());
     }
 
