@@ -1,13 +1,14 @@
-package maximeopsommer.android.loupsgaroumj;
+package maximeopsommer.android.loupsgaroumj.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import maximeopsommer.android.loupsgaroumj.R;
+import maximeopsommer.android.loupsgaroumj.utils.PlayerListAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,11 +31,7 @@ public class GameCreationActivity extends AppCompatActivity {
         addPlayerButton.setOnClickListener(e -> checkPlayerName());
         playersList = findViewById(R.id.playersList);
 
-        // custom adapter
-        PlayerListAdapter playerListAdapter = new PlayerListAdapter(playersName, this);
-
-        final ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1, playersName);
+        final PlayerListAdapter playerListAdapter = new PlayerListAdapter(playersName, this);
         cancelButton = findViewById(R.id.cancelButton);
         playersList.setAdapter(playerListAdapter);
         cancelButton.setOnClickListener(e -> switchToMainView());

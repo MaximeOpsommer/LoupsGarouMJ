@@ -1,4 +1,4 @@
-package maximeopsommer.android.loupsgaroumj;
+package maximeopsommer.android.loupsgaroumj.utils;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.TextView;
+import maximeopsommer.android.loupsgaroumj.R;
 
 import java.util.List;
 
@@ -17,7 +18,7 @@ public class PlayerListAdapter extends BaseAdapter implements ListAdapter {
     private final List<String> list;
     private final Context context;
 
-    PlayerListAdapter(final List<String> list, final Context context) {
+    public PlayerListAdapter(final List<String> list, final Context context) {
         this.list = list;
         this.context = context;
     }

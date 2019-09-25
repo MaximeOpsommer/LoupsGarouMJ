@@ -1,4 +1,4 @@
-package maximeopsommer.android.loupsgaroumj;
+package maximeopsommer.android.loupsgaroumj.activities;
 
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Display;
 import android.widget.Button;
 import android.widget.TextView;
+import maximeopsommer.android.loupsgaroumj.R;
 
 public class MainActivity extends AppCompatActivity {
 
